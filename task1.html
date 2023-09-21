@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const num1 = 78;
+        const num2 = 1.69;
+        const num3 = 92;
+        const num4 = 1.95;
+        const MarkBMI = num1 / (num2 * num2);
+        const JohnBMI = num3 / (num4 * num4);
+        const MarkshigherBMI = MarkBMI > JohnBMI;
+
+        console.log("BMI Mark:", MarkBMI);
+        console.log("BMI John", JohnBMI);
+    </script>
+    <script>
+        const num5 = 95;
+        const num6 = 1.88;
+        const num7 = 85;
+        const num8 = 1.76;
+        const MarksBMI = num5 / (num6 * num6);
+        const JohnsBMI = num7 / (num8 * num8);
+        const MarkhigherBMI = MarksBMI > JohnsBMI;
+
+        console.log("BMI Marks:", MarksBMI);
+        console.log("BMI Johns", JohnsBMI);
+
+    </script>
+    <script>
+        const Dolphins = [96, 108, 89]
+        const Koalas = [88, 91, 110]
+    const tinhDiemTrungBinh = (diem) => {
+    return diem.reduce((tongDiem, diem) => tongDiem + diem, 0) / diem.length;
+    };
+
+   const diemTrungBinhDolphins1 = tinhDiemTrungBinh(Dolphins)
+    const diemTrungBinhKoalas1 = tinhDiemTrungBinh(Koalas);
+
+    console.log(`Dữ liệu kiểm tra 1:`);
+    console.log(`Điểm trung bình của Dolphins là ${diemTrungBinhDolphins1.toFixed(1)}`);
+    console.log(`Điểm trung bình của Koalas là ${diemTrungBinhKoalas1.toFixed(1)}`);
+
+    // So sánh điểm trung bình và xác định người chiến thắng hoặc hòa
+    if (diemTrungBinhDolphins1 > diemTrungBinhKoalas1 && diemTrungBinhDolphins1 >= 100) {
+    console.log(`Dolphins thắng!`);
+    } else if (diemTrungBinhKoalas1 > diemTrungBinhDolphins1 && diemTrungBinhKoalas1 >= 100) {
+    console.log(`Koalas thắng !`);
+    } else if (diemTrungBinhDolphins1 === diemTrungBinhKoalas1 && diemTrungBinhDolphins1 >= 100) {
+    console.log(`Hòa điểm !`);
+    } else {
+    console.log(`Không có ai chiến thắng`);
+    }
+ </script>
+ <script>
+    const DolphinsBonus1 = [97, 112, 101];
+    const KoalasBonus1 = [109, 95, 123];
+
+    const diemTrungBinhDolphinsBonus1 = tinhDiemTrungBinh(DolphinsBonus1);
+    const diemTrungBinhKoalasBonus1 = tinhDiemTrungBinh(KoalasBonus1);
+
+    console.log(`\nDữ liệu Bonus 1:`);
+    console.log(`Điểm trung bình của Dolphins là ${diemTrungBinhDolphinsBonus1.toFixed(1)}`);
+    console.log(`Điểm trung bình của Koalas là ${diemTrungBinhKoalasBonus1.toFixed(1)}`);
+
+    if (diemTrungBinhDolphinsBonus1 > diemTrungBinhKoalasBonus1 && diemTrungBinhDolphinsBonus1 >= 100) {
+    console.log(`Dolphins thắng !`);
+    } else if (diemTrungBinhKoalasBonus1 > diemTrungBinhDolphinsBonus1 && diemTrungBinhKoalasBonus1 >= 100) {
+    console.log(`Koalas thắng !`);
+    } else if (diemTrungBinhDolphinsBonus1 === diemTrungBinhKoalasBonus1 && diemTrungBinhDolphinsBonus1 >= 100) {
+    console.log(`Hòa điểm !`);
+    } else {
+    console.log(`Không có ai chiến thắng !`);
+    }
+
+ </script>
+    <script>
+         const DolphinsBonus2 = [97, 112, 101];
+        const KoalasBonus2 = [109, 95, 106];
+
+    const diemTrungBinhDolphinsBonus2 = tinhDiemTrungBinh(DolphinsBonus2);
+    const diemTrungBinhKoalasBonus2 = tinhDiemTrungBinh(KoalasBonus2);
+
+    console.log(`\nDữ liệu Bonus 2:`);
+    console.log(`Điểm trung bình của Dolphins là ${diemTrungBinhDolphinsBonus2.toFixed(1)}`);
+    console.log(`Điểm trung bình của Koalas là ${diemTrungBinhKoalasBonus2.toFixed(1)}`);
+
+    if (diemTrungBinhDolphinsBonus2 > diemTrungBinhKoalasBonus2 && diemTrungBinhDolphinsBonus2 >= 100) {
+    console.log(`Dolphins thắng`);
+    } else if (diemTrungBinhKoalasBonus2 > diemTrungBinhDolphinsBonus2 && diemTrungBinhKoalasBonus2 >= 100) {
+    console.log(`Koalas thắng `);
+    } else if (diemTrungBinhDolphinsBonus2 === diemTrungBinhKoalasBonus2 && diemTrungBinhDolphinsBonus2 >= 100) {
+    console.log(`Hòa điểm trung bình `);
+    } else {
+    console.log(`Không có ai chiến thắng`);
+    }
+    </script>
+</body>
+
+</html>
